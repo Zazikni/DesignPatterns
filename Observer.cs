@@ -118,7 +118,7 @@ namespace DesignPatterns
                 $"Глубина: {this.dungeonKnownDeepness} --> {dungeonKnownDeepness}\n" +
                 $"Опасность: {this.dungeonDanger} --> {dungeonDanger}\n" +
                 $"Максимальный уровень монстров: {this.monsterMaxLevel} --> {monsterMaxLevel}\n" +
-                $"Количество пропавших исследователей: {this.missingExplorers} --> {missingExplorers}"
+                $"Количество пропавших исследователей: {this.missingExplorers} --> {missingExplorers}\n\n"
                 );
             this.dungeonKnownDeepness = dungeonKnownDeepness;
             this.dungeonDanger = dungeonDanger;
@@ -154,7 +154,7 @@ namespace DesignPatterns
                 Console.WriteLine(
                     $"В подземелье \"{this.dungeonName}\" превышен порог критического значения ГЛУБИНЫ!\n" +
                     $"Текущее значение: {dungeonKnownDeepness} критическое: {this.criticalDungeonKnownDeepness}\n" +
-                    $"Вам следует обратить на него внимание!"
+                    $"Вам следует обратить на него внимание!\n\n"
                     );
             }
             if (dungeonDanger >= this.criticalDungeonDanger)
@@ -162,7 +162,7 @@ namespace DesignPatterns
                 Console.WriteLine(
                     $"В подземелье \"{this.dungeonName}\" превышен порог критического значения ОПАСНОСТИ!\n" +
                     $"Текущее значение: {dungeonDanger} критическое: {this.criticalDungeonDanger}\n" +
-                    $"Вам следует обратить на него внимание!"
+                    $"Вам следует обратить на него внимание!\n\n"
                     );
             }
             if (monsterMaxLevel >= this.criticalMonsterMaxLevel)
@@ -170,7 +170,7 @@ namespace DesignPatterns
                 Console.WriteLine(
                     $"В подземелье \"{this.dungeonName}\" превышен порог критического значения УРОВНЯ МОНСТРОВ!\n" +
                     $"Текущее значение: {monsterMaxLevel} критическое: {this.criticalMonsterMaxLevel}\n" +
-                    $"Вам следует обратить на него внимание!"
+                    $"Вам следует обратить на него внимание!\n\n"
                     );
             }
             if (missingExplorers >= this.criticalMissingExplorers)
@@ -178,7 +178,7 @@ namespace DesignPatterns
                 Console.WriteLine(
                     $"В подземелье \"{this.dungeonName}\" превышен порог критического значения ПРОПАВШИХ ИССЛЕДОВАТЕЛЕЙ!\n" +
                     $"Текущее значение: {missingExplorers} критическое: {this.criticalMissingExplorers}\n" +
-                    $"Вам следует обратить на него внимание!"
+                    $"Вам следует обратить на него внимание!\n\n"
                     );
             }
         }
